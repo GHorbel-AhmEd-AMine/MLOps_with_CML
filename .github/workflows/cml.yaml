@@ -12,6 +12,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
       - name: Train model
+        #Environment token
         env:
           REPO_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
